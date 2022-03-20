@@ -1,0 +1,140 @@
+body {
+	margin: 0px;
+	font-size: 16px;
+	color: #202124;
+	background-color: #F7F3EF;
+	font-family: 'Merriweather', serif;
+  text-decoration: none;
+}
+
+/** Header **/
+#header-nav {
+	border-radius:  0;
+	border:  0;
+}
+
+.navbar div a h1{
+  display: flex;
+  height: 50px;
+  align-items: center;
+  margin-left: 12px;
+}
+
+#toggle-icon {
+  background: url('../images/icons/list.svg') no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.navbar-toggler:visited, .navbar-toggler:active, .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#nav-list li a svg { /* navigation menu glyph styling */
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+#chicken-icon {
+  background: url('../images/icons/chicken.svg') no-repeat;
+}
+
+#beef-icon {
+  background: url('../images/icons/beef.svg') no-repeat;
+}
+
+#sushi-icon {
+  background: url('../images/icons/sushi.svg') no-repeat;
+}
+
+.navbar h1 { /* Website name */
+  color: #00424D;
+  font-size: 2em;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar a:link, .navbar a:active,.navbar a:hover, .navbar a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  padding-top: 15px;
+  margin-top: 12px;
+  background-color: #00424D;
+  border-radius: 0 0 5px 5px;
+}
+
+#nav-list a {
+  color: #fff;
+}
+
+.navbar-header button.navbar-toggler {
+  clear: both;
+}
+
+.navbar ul li {
+  margin: 0 auto 15px;
+}
+/* End Header */
+
+/* Main content */
+div h2 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 1.4em;
+}
+
+#tile-1, #tile-2, #tile-3 {
+  background-color: rgba(0, 66, 77, 0.3);
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+#tiles div h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #4D0C00;
+  margin-top: 12px;
+}
+
+#tiles div div p {
+  font-size: 0.8em;
+}
+/* End main content */
+
+/* Footer */
+.card-footer {
+  background-color: #F7F3EF;
+}
+
+footer #first-section, footer #second-section, footer #third-section {
+  margin-top: 24px;
+  text-align: center;
+}
+
+footer #first-section a:link, footer #second-section a:link, footer #third-section a:link {
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #202124;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 0.6em;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+/* End Footer */
+
+/************ Small devices only ************/
+
+/************ Medium devices only ************/
+
+/************ Large devices only ************/
