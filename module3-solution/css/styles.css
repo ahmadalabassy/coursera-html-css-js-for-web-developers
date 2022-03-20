@@ -64,7 +64,7 @@ body {
 }
 
 #nav-list {
-  padding-top: 15px;
+  padding-top: 12px;
   margin-top: 12px;
   background-color: #00424D;
   border-radius: 0 0 5px 5px;
@@ -74,12 +74,8 @@ body {
   color: #fff;
 }
 
-.navbar-header button.navbar-toggler {
-  clear: both;
-}
-
 .navbar ul li {
-  margin: 0 auto 15px;
+  margin-bottom: 12px;
 }
 /* End Header */
 
