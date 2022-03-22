@@ -1,31 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap Starter Page</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<h1>Responsive Layout</h1>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ahmad Alabassy</title>
+    <link rel="stylesheet" href="js/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">Col 1</div>
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">Col 2</div>
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">Col 3</div>
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">Col 4</div>
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">Col 5</div>
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">Col 6</div>
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">Col 7</div>
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">Col 8</div>
-  </div>
-</div>
+  <body>
+    <!-- Homepage header -->
+    <header>
+      <nav id="header-nav" class="navbar navbar-expand-xl">
+        <div class="container">
+          <!-- logo and title -->
+          <div class="d-flex">
+            <a href="index.html" class="d-md-inline d-none">
+              <div id="logo"></div>
+            </a>
 
-<!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="jquery-3.6.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-</html>
+            <div class="navbar-brand d-inline">
+              <a href="index.html"><h1>Ahmad Alabassy</h1></a>
+            </div>
+          </div>
+
+          <!-- navigation menu toggler -->
+          <button type="button" class="navbar-toggler d-xl-none d-inline" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg id="toggle-icon"></svg>
+          </button>
+          
+          <!-- navigation menu -->
+          <div id="collapsable-nav" class="collapse navbar-collapse justify-content-end">
+            <ul id="nav-list" class="nav navbar-nav">
+              <li>
+                <a href="gallery.html">
+                  <svg id="gallery-icon" class="d-xl-block"></svg>
+                  <span class="d-inline">Gallery</span>
+                </a>
+              </li>
+              <li>
+                <a href="blog.html">
+                  <svg id="blog-icon" class="d-xl-block"></svg>
+                  <span class="d-inline">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  <svg id="contact-icon" class="d-xl-block"></svg>
+                  <span class="d-inline">Contact</span>
+                </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  <svg id="about-icon" class="d-xl-block"></svg>
+                  <span class="d-inline">About</span>
+                </a>
+              </li>
+              <li>
+                <a href="search.html">
+                  <svg id="search-icon" class="d-xl-block"></svg> 
+                  <span class="d-inline">Search</span>
+                </a>
+              </li>
+              <li>
+                <a href="language.html">
+                  <svg id="lang-icon" class="d-xl-block"></svg> 
+                  <span class="d-inline">Language</span>
+                </a>
+              </li>
+              <li>
+                <a href="dark-mode.html">
+                  <svg id="dark-mode-on-icon" class="d-xl-block"></svg>
+                  <span class="d-inline">Dark Mode</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Homepage main content -->
+    <div id="main-content" class="container">
+      <div class="jumbotron"></div>
+
+      <div id="hompage-tiles" class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="blog/hello-world">
+            <div id="homepage-tile-1"><img src="images/tile1.jpeg"><span>Hello World!</span></div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="blog/responsive-tooltip">
+            <div id="homepage-tile-2"><img src="images/tile2.jpg"><span>A Responsive Tooltip</span></div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <a href="blog/tweets-carousel">
+            <div id="homepage-tile-3"><img src="images/tile3.jpg"><span>Tweets Carousel</span></div>
+          </a>
+        </div>
+      </div> <!-- End of hompage-tiles -->
+    </div> <!-- End of main-content -->
+
+    <!-- Homepage footer -->
+    <footer class="card-footer">
+      <div class="container">
+        <div class="row">
+          <section id="first-section" class="col-sm-4 col-xs-12">
+            <a href="privacy-and-cookie-policy.html">Privacy &amp; Cookie Policy</a><br>
+            <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+          </section>
+          <section id="second-section" class="col-sm-4 col-xs-12">
+            <a href="accessibility.html">Accessibility</a><br>
+            <a href="site-map.html">Site Map</a><br>
+            <a href="topics.html">All Topics</a>
+          </section>
+          <section id="third-section" class="col-sm-4 col-xs-12"> 
+            <a href="contact.html#newsletter">Newsletter</a><br>
+            <a href="contact.html#social-media">Social Media</a><br>
+            <a href="contact.html#contact-form#feedback">Feedback</a>
+          </section>
+        </div>  
+        <div id="copyright">© 2022 Ahmad Alabassy. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body></html>
